@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
+    <link href='https://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+	<div class="title-container">
+		<h1 class="title"><img class="title-bug" src="images/modal-bug1.png">SPEEDING BUGGERS<img class="title-bug" src="images/modal-bug2.png"></h1>
+	</div>
+	<section class="uiContainer">
+		<div class="timer">
+        	<label class="min">01</label>:<label class="sec">00</label>
+        </div>
+
+		<label class="score">Score : <span>0</span></label>
+
+		<label class="lives"> Lives :  
+			<img class = "heart" src="images/Heart2.png">
+			<img class = "heart" src="images/Heart2.png">
+			<img class = "heart" src="images/Heart2.png">
+		</label>
+	</section>
+
+	<!-- <div class="winning-modal start-modal-open"> -->
+	<div class="modal-start modal modal-open">
+        <!-- <div class="start-modal-content"> -->
+        <div class="modal-container">
+            <span class="close"></span>
+
+			<h1 class="game-title"><img class="modal-bug" src="images/modal-bug1.png">SPEEDING BUGGERS<img class="modal-bug" src="images/modal-bug2.png"></h1>
+
+            <p class="modal-message">Gain as many points as possible within one minute and without losing all 3 lives to win!</p>
+
+            <p class="modal-message">water tiles = 50 points and the boat = 250 points!</p>
+
+            <p class="modal-message">If all lives are lost before one minute, you lose.</p>
+
+            <p class="modal-message">Tip: All the bugs' speeds and movement orientaions (moving left or right) are randomized, so be careful when trying to predict their behavior.</p>
+
+            <button class="start-button">Start</button>
+        </div>
+    </div>
+
+    <!-- <div class="winning-modal start-modal-open"> -->
+    <div class="modal-loss modal">
+        <!-- <div class="losing-modal-content"> -->
+        <div class="modal-container">
+            <span class="close"></span>
+
+			<img class="modal-person-loss" src="images/char-boy-hit.png">
+			<h1 class="loss">YOU LOSE!</h1>
+
+            <p class="modal-message losing-message">You failed to live through the speeding buggers before the timer ran out!</p>
+
+            <button class="new-game">New Game</button>
+        </div>
+    </div>
+
+    <div class="modal-win modal">
+        <!-- <div class="winning-modal-content"> -->
+        <div class="modal-container">
+            <span class="close"></span>
+
+			<img class="modal-star" src="images/Star.png">
+			<h1 class="win">YOU WIN!</h1>
+
+            <p class="modal-message winning-message">You successfully lived through the speeding buggers within the given time!</p>
+
+            <button class="new-game new-game2">New Game</button>
+        </div>
+    </div>
+
     <script src="js/resources.js"></script>
+    <script src="js/classes.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
 </body>

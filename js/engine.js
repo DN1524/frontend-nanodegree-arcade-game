@@ -18,13 +18,13 @@ var Engine = (function(global) {
      * create the canvas element, grab the 2D context for that canvas
      * set the canvas elements height/width and add it to the DOM.
      */
-    var doc = global.document,
+    let doc = global.document,
         win = global.window,
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
         lastTime;
 
-    canvas.width = 505;
+    canvas.width = 505;//710;
     canvas.height = 606;
     doc.body.appendChild(canvas);
 
@@ -79,8 +79,10 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        //checkCollisions();
+        //console.log(getDistance(allEnemies[3].x, allEnemies[3].y, player.x, player.y));
     }
+
 
     /* This is called by the update function and loops through all of the
      * objects within your allEnemies array as defined in app.js and calls
@@ -94,6 +96,7 @@ var Engine = (function(global) {
             enemy.update(dt);
         });
         player.update();
+        boat.update();
     }
 
     /* This function initially draws the "game level", it will then call
@@ -111,11 +114,11 @@ var Engine = (function(global) {
                 'images/stone-block.png',   // Row 1 of 3 of stone
                 'images/stone-block.png',   // Row 2 of 3 of stone
                 'images/stone-block.png',   // Row 3 of 3 of stone
-                'images/grass-block.png',   // Row 1 of 2 of grass
+                'images/stone-block.png',   // Row 1 of 2 of grass
                 'images/grass-block.png'    // Row 2 of 2 of grass
             ],
             numRows = 6,
-            numCols = 5,
+            numCols = 5, //7,
             row, col;
         
         // Before drawing, clear existing canvas
@@ -154,6 +157,7 @@ var Engine = (function(global) {
         });
 
         player.render();
+        boat.render();
     }
 
     /* This function does nothing but it could have been a good place to
@@ -173,7 +177,14 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/enemy-bug-yellow.png',
+        'images/enemy-bug-green.png',
+        'images/enemy-bug2.png',
+        'images/enemy-bug2-purple.png',
+        'images/enemy-bug2-blue.png',
+        'images/char-boy.png',
+        'images/char-boy-hit.png',
+        'images/Boat.png'
     ]);
     Resources.onReady(init);
 
@@ -183,3 +194,27 @@ var Engine = (function(global) {
      */
     global.ctx = ctx;
 })(this);
+
+let totalSec = 60;
+let min = document.querySelector(".min");
+let sec = document.querySelector(".sec");
+
+//  ~~~ Timer function ~~~
+// Code from Stackoverflow with some changes: https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa 
+function startTimer(){  
+    function setTime() {
+        --totalSec;
+        sec.innerHTML = pad(totalSec % 60);
+        min.innerHTML = pad(parseInt(totalSec / 60));
+    }
+
+    function pad(val) {
+        let valString = val + "";
+        return valString.length < 2 ? `0${valString}` : valString
+    }
+    timer = setInterval(setTime, 1000)
+}
+
+function stopTimer() {
+    clearInterval(timer);
+}

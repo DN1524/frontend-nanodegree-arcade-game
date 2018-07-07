@@ -1,3 +1,130 @@
 body {
     text-align: center;
+    flex-wrap: wrap;
+    background-color: #0083af; /*#30237f;*/
+	color: yellow;
+	font-family: Balthazar, FreeMono, monospace;
+	background-image: url("../images/BG-Bug.png");
+}
+
+canvas {
+	border: solid;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(#536AD5, #4B985C);
+}
+
+.title-container {
+	border: solid;
+	width: 600px;
+	height: 120px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	font-size: 25px;
+	background-color: #006b13;
+}
+
+.title-bug {
+	height: 50px;
+	width: 70px;
+}
+
+.uiContainer {
+	border: solid;
+	border-bottom: none;
+	display: flex;
+	width: 505px;
+	font-size: 35px;
+	background-color: rgba(68, 68, 68, 0.7);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heart {
+	height: 25px;
+	width: 32px;
+	margin: 0;
+}
+
+.lives {
+	width: 50%;
+}
+
+.score {
+	width: 50%;
+}
+
+.timer {
+	width: 25%;
+}
+
+.modal {
+	display: none;
+	overflow: auto;
+}
+
+.modal-open {
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+    display: inline-block;
+    position: fixed;
+    padding-top: 10%;
+	left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-container {
+	background-color: #353535;
+	border: 10px solid;
+	border-radius: 25px;
+	color: #e9ff26;
+	width: 600px;
+	padding: 1em;
+	margin: auto;
+	font-size: 20px;
+}
+
+.game-title {
+	border: 2px solid;
+	background-color: #006b13;
+	color: #e9ff26;
+	border-radius: 15px;
+	margin: auto;
+}
+
+.modal-bug {
+	margin: 0;
+	padding: 15px 5px 5px 0px;
+	height: 75px;
+	width: 100px;
+}
+
+.modal-person-loss {
+	margin: 0;
+	height: 240px;
+	width: 150px;
+}
+
+.modal-message, .final-score {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.start-button, .new-game {
+	background-color: #e9ff26;
+	width: 50%;
+	margin: auto;
+	border-radius: 15px;
+	font-size: 30px;
+	font-style: italic;
+}
+
+.start-button:hover, .new-game:hover {
+	background-color: #006b13;
+	color: #e9ff26;
+	cursor: pointer;
 }
