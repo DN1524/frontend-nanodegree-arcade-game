@@ -37,7 +37,7 @@ People who wrote the code to start off with for the Udacity students.
  
 ## License
  
-This code is free for anyone to use and change they please, but will be much appreciated if I were credited for the code.
+This code is free for anyone to use and may change it as they please, but it will be much appreciated if credit was given.
 
 - All the images in the game and game files (other than the boat) such as the game tiles, bugs, and player characters do not belong to me.
  
