@@ -32,7 +32,7 @@ People who wrote the code to start off with for the Udacity students.
 - Durant Schoon
  
  Builder of the game's functionality and styling.
- -Daniel Martinez
+- Daniel Martinez
  
  
 ## License
