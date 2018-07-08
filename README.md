@@ -22,8 +22,14 @@ To get a copy of this game, you can fork it from my GitHub, then you can clone i
 ## Contributors
 
 People who wrote the code to start off with for the Udacity students.
- - David Harris
- - Richard Kalehoff
+- David Harris
+- Richard Kalehoff
+- Susan Smith
+- Michael Wales
+- Siakaram alego
+- Nicolas Artman
+- Heidi Kasemir
+- Durant Schoon
  
  Builder of the game's functionality and styling.
  -Daniel Martinez
