@@ -57,7 +57,7 @@ This code is free for anyone to use and may change it as they please, but it wil
 - Thanks to Chandu from Stackoverflow.com for the timer function. (Function was modified and made to count down)
 https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 
-- Thanks to the YouTuber Chris from Chris Courses for the function that determines the distance between to objects
+- Thanks to the YouTuber Chris from Chris Courses for the function that determines the distance between two objects
 https://www.youtube.com/watch?v=XYzA_kPWyJ8&t=907s
 
 - Jqeury was used in this project https://ajax.googleapis.com
