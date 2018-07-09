@@ -13,10 +13,18 @@ The goal of this game is to dodge the bugs passing by and make it to the water o
 - All bugs in the game have random speeds and randomly changes directions going from right to left or left to right.
 - All bugs randomly change color, but the color is just for looks. It does NOT change the bug in any way.
 
+NOTE: This is not the final version of the game.
+
 
 ## Download/installation
 
-To get a copy of this game, you can fork it from my GitHub, then you can clone it with GIT clone on a command propmt such as Git Bash, to your machine from YOUR fork of the game and can play it locally.
+- You can fork it from my GitHub, then you can clone it with GIT clone on a command propmt such as Git Bash, to your machine from YOUR fork of the game and can play it locally.
+
+- You can download the game staright from GitHub by clicking the green button that says "Clone or download" on the right hand side of the page. If you do this then :
+
+1. You will get a zipped folder with all the game's files.
+2. Extract files to a specified file destination on you computer.
+3. If all goes well, you can open the game's index.html file with a web browser such as Google Chrome or FireFox to play the game.
 
 
 ## Contributors
