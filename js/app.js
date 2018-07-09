@@ -55,10 +55,10 @@ function playerReset() {
     player.sprite = 'images/char-boy.png'
     player.x = 2 * 101;
     player.y = 5 * 80;
-    setTimeout (function() { //Prevents the player from being
-        executed = false;    //sent back to default position
-    }, 1000);                //immediately after a collision occurs. 
-
+    setTimeout (function() { //Prevents the lifeLost function
+        executed = false;    //to be called multiple times
+    }, 1000);                //which causes a game over after only
+                             //one collision.
 }
 // ~~~~ Function that opens up Victory Modal ~~~~
 function winGame() {
